@@ -469,7 +469,7 @@ header .container {
 }
 
 .contact {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .contact-content {
@@ -634,16 +634,6 @@ footer .logo {
   .iso {
     font-size: 5vh;
     margin-left: 30px;
-  }
-
-  .shape-content {
-    top: -123px;
-    left: 0px;
-    width: 100vw;
-}
-
-  .about{
-    border-radius: 0;
   }
 
   .h1,
@@ -811,6 +801,24 @@ footer .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-top{
+    padding: 0;
+  }
+
+  .contact{
+    margin-bottom: 70px;
+  }
+
+  .shape-content {
+    top: -123px;
+    left: 0px;
+    width: 100vw;
+}
+
+  .about{
+    border-radius: 0;
   }
   
 }
