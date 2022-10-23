@@ -636,16 +636,23 @@ footer .logo {
     margin-left: 30px;
   }
 
+  .shape-content {
+    top: -123px;
+    left: 0px;
+    width: 100vw;
+}
+
   .about{
-    border-bottom-left-radius: 80% 20%;
-    border-bottom-right-radius: 80% 20%;
-    border-top-left-radius: 80% 20%;
-    border-top-right-radius: 80% 20%;
+    border-radius: 0;
   }
 
   .h1,
   .h2 {
     font-weight: var(--fw-700);
+  }
+
+  .h1{
+    font-size: 50px;
   }
 
   .btn {
@@ -658,12 +665,7 @@ footer .logo {
   }
 
   .hero {
-    padding: 140px 0 160px;
-  }
-
-  .shape-content {
-    top: -70px;
-    right: -260px;
+    padding: 140px 0 100px 0;
   }
 
   .about-card .card-title {
@@ -679,6 +681,11 @@ footer .logo {
   .about-bottom-content {
     padding-inline: 50px;
   }
+
+  .hero-title, .hero-text {
+    margin-bottom: 30px;
+    margin-top: -147px;
+}
 
   .features .h2 {
     --fs-2: 32px;
@@ -731,6 +738,16 @@ footer .logo {
     right: 0;
   }
 
+  .shape-content {
+    top: -141px;
+    left: 0px;
+    width: 100vw;
+}
+
+  .about{
+    border-radius: 0;
+  }
+
   .hero-content,
   .about-bottom-content {
     text-align: left;
@@ -739,11 +756,6 @@ footer .logo {
   .hero .btn-primary,
   .about-bottom .btn-secondary {
     margin-inline: 0;
-  }
-
-  .shape-content {
-    top: -156px;
-    right: -152px;
   }
 
   .footer-brand {
@@ -792,6 +804,24 @@ footer .logo {
 
 }
 
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  
+  .footer-top .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 @media (min-width: 1024px) {
 
@@ -930,7 +960,6 @@ footer .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
   }
 
   .footer-brand,
@@ -938,14 +967,7 @@ footer .logo {
     margin-bottom: 0;
   }
 
-  .footer-link-box {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-  }
-
 }
-
-
 
 @media (min-width: 1200px) {
 
@@ -975,6 +997,20 @@ footer .logo {
 
   .features :is(.section-title, .section-text) {
     max-width: 850px;
+  }
+
+  .about {
+    position: relative;
+    z-index: 1;
+    background: url("../images/about-bg.png") no-repeat;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
   }
 
 }
