@@ -173,9 +173,11 @@ body {
   background: var(--naranja);
   border-color: #ffbd59;
   color: var(--white);
+  transition: .4s;
 }
 
 .btn-primary:is(:hover, :focus) {
+  transition: .4s;
   --naranja: hsl(2, 91%, 71%);
 }
 
