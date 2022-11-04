@@ -414,7 +414,15 @@ header .container {
 
 .features-item-banner img {
   width: 100%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: .7s ease-in-out all;
 }
+.features-item-banner img.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 .features-item .item-title {
   color: var(--royal-blue-dark);
@@ -728,7 +736,6 @@ footer .logo {
   }
 
   .shape-content {
-    top: -141px;
     left: 0px;
     width: 100vw;
 }
